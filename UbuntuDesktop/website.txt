@@ -1,0 +1,25 @@
+###############################
+# # = sharp is comment        #
+# $ = dollar sign is command  #
+#   = none is stdout          #
+###############################
+
+# Static web sayfa uygulamaları için
+http://staticgen.com
+
+# Kodların duracağı versiyonlama sistemi
+https://github.com
+
+$ sudo apt-get install rubygems ruby-dev
+$ sudo gem install jekyll
+
+$ sudo jekyll new myBlog(download from jekyll themes)
+
+$ jekyll build
+$ jekyll serve
+
+$ sudo gem install bundler
+$ sudo bundle install
+$ sudo bundle update
+$ sudo gem install rubygems-bundler
+$ sudo gem regenerate-binstubs

@@ -1,0 +1,72 @@
+###############################
+# # = sharp is comment        #
+# $ = dollar sign is command  #
+#   = none is stdout          #
+###############################
+
+# base config
+$ sudo aptitude update
+$ sudo aptitude dist-upgrade
+$ sudo dpkg-reconfigure locales
+$ sudo aptitude install apt-utils
+$ sudo aptitude install vim wget curl tcpdump traceroute telnet sysstat htop
+$ sudo vi /etc/logrotate.conf
+$ sudo dpkg-reconfigure tzdata
+
+# Docker Installation
+# need curl
+$ aptitude install curl
+
+# need apt-utils when build docker image
+$ aptitude install apt-utils
+
+# get docker
+$ curl -sSL https://get.docker.com/ | sh
+
+# to run containers as myself
+$ usermod -aG docker vahit
+
+# look for proper apache docker image
+$ docker search ubuntu
+NAME                       DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+ubuntu                     Ubuntu is a Debian-based Linux operating s...   4568      [OK]
+ubuntu-upstart             Upstart is an event-based replacement for ...   66        [OK]
+rastasheep/ubuntu-sshd     Dockerized SSH service, built on top of of...   33                   [OK]
+torusware/speedus-ubuntu   Always updated official Ubuntu docker imag...   27                   [OK]
+ubuntu-debootstrap         debootstrap --variant=minbase --components...   25        [OK]
+
+# get one
+$ docker pull ubuntu
+
+# where am i ?
+$ pwd
+/home/vahit
+
+####### Prepare a docker image #######
+
+# create docker project folder
+$ mkdir mubuntu
+$ cd mubuntu
+
+# specify specs for mubuntu image, refer to project folder for details.
+$ touch dockerfile
+
+# build the new image
+$ docker build -t mubuntu ./
+
+# run apache container with new image.
+# -d for daemonize
+# -p for listen port
+# -h for hostname
+# --link for inter container communication
+# --name container name
+$ docker run -d -p 80:80 -h cont-user --name cont-pc1 mubuntu
+
+# execute my icinga2 node setup script
+$ docker exec -t cont-pc1 /bin/bash /usr/local/bin/icinga2-node.sh
+
+# ssh login vweb container
+$ sudo docker exec -it cont-pc1 /bin/bash
+
+# ssh logout vweb container
+$ exit

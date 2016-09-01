@@ -1,0 +1,141 @@
+UNIX sistemleri ilk kez AT&T Bell Lab'ta 1969-1970 yıllarında yazılmıştır. Proje gurubunda Ken Thompson, Dennis Ritchie, Brian Kernighan, Joe Osanna gibi kişiler bulunmuştu.
+http://www.princeton.edu/~hos/frs122/precis/mcilroy.htm
+
+Bu ekip daha önce MIT ve General Electric ile birlikte MULTICS projesi üzerinde çalışmış, AT&T zamanla MULTICS projesinden çekilince kendi işletim sistemlerini yazma projesini hayata geçirmişler.
+UNIX işletim sistemi ilk kez DEC'in PDP-7 makinalarında yazılmış.
+
+C programlama dili UNIX projesinin bir yan ürünü olarak 1971 yıllarında Dennis Ritchie tarafından B dilinden hareketle geliştirilmiş.
+
+Bir PDP-11’de bilgisayar oyunu oynamak isteyen Dennis Ritchie ve Ken Thompson’ın Uzay Savaşları oynamaya yönelik kişisel projeleri için Unix işletim sistemlerini geliştirilmeye başlamış ve 1973 yılında Unix işletim sistemi DEC-PDP 11 için çok büyük oranda C programlama dili ile yeniden yazılmış.
+İşletim sistemi ciddi bir proje olarak görülmediği için AT&T onun ticari bir değeri olacağını hiç düşünmemiş.
+
+Unix, yüksek seviyeli bir programlama dili ile yazılmış olan ilk işletim sistemidir. Bu durum Unix işletim sisteminin farklı platformlarda yazılmasını çok kolaylaştırmış.
+AT&T o yıllarda USA'de bir tekel ve yapmayacağı şeylerden birisi de bilgisayar satmaktı. Böylece Unix’i yazanlar onu özellikle üniversiteler için özgürce, kaynak lisansı ile birlikte edinilebilir duruma getirdi.
+Bu durum C programlama dilinin tanınmasına yol açarken Unix sistemlerinin taşınabilirliğinin bozulması sonucunu da doğurmuştur. Çünkü kaynak kodları ele geçiren kurumlar orjinal Unix sistemlerinde değişiklikler yaparak farklı Unix sistemleri oluşturmuşlardır.
+Bu sistemlerin en önemlilerinden biri Berkeley Sistemleridir. Bu sistemler BSD(Berkeley Software Distribution) olarak bilinmektedir. Özellkle Bill Jolitz tarafından BSD kod tabanında oluşturulan ve dağıtımı internet üzerinde yapılan 386BSDprojesi en önemli projelerdendir.
+Daha sonra BSD parçalara ayrılarak, ücretsiz elde edilecek  BSD sistemlerini (FreeBSD, NetBSD ve OpenBSD versiyonları) oluşturuldu.
+80’li yıllarda pekçok özel firma da kendi Unix sistemlerini yazmıştı. Sun firmasının Solaris, HP firmasının HP-UX, SCO firmasının SCO_UNIX, IBM firmasının AIX örnek olarak verebiliriz.
+https://en.wikipedia.org/wiki/Cisco_Systems
+https://en.wikipedia.org/wiki/Juniper_Networks
+AT&T 90’lı yılların başında Unix sistemlerine telif uygulamaya başlamış ve California-Berkeley Üniversitesi’ni dava etmiş.
+Orjinal kod AT&T’nindi ama sonraki çalışmaların büyük bölümü Berkeley’de yapılmıştı. Dava Novell şirketinin Unix’i AT&T’den satın almasıyla uzlaşmayla sonuçlandı.
+Bu durumdan tedirgin olan üniversiteler ve araştırmacılar bedava Unix sistemleri geliştirme yönünde çalışmalar başlatmışlar.
+80'li yılların ortalarında Hollandalı profesör Andrew Tanenbaum okuldaki derslerden faydalansın diye MINIX isminde UNIX türevi mikrokernel mini bir işletim sistemi yazdı.
+Bu işletim sistemi pek çok projeye ilham kaynağı olmuştur. Minix ticari amaçla çeşitli kesimler tarafından kullanılmış olsa da ciddi bir yaygınlık kazanmamıştır. Fakat kaynak kodları pek çok geliştiriciye ilham vermiştir.
+http://www.amazon.com/Operating-Systems-Design-Implementation-Edition/dp/0131429388
+
+1984 yılında Richard Stallman FSF(Free Software Foundation) isimli bir kurum altında serbest yazılım fikrini ortaya atmıştır. Serbest yazılım bedava yazılımdan daha çok geliştirme özgürlüğünü benimsemektedir.
+Yani, programcı yazdığı programı kaynak kodu ile birlikte verir, kaynak kodu sahiplenip değiştirilmesini engelleyemez. Kaynak kodu elde eden programcı, orjinal yazardan alıntı yaptığını belirterek kodu değiştirebilir. Serbest yazılım bedava olabilir de olmayabilir de, fakat serbest yazılım parayla satılsa bile kaynak kodu verilmek zorundadır.
+Richard Stallman FSF kurumunu oluşturduktan sonra GNU isimli bir proje oluşturmuştur. GNU(GNU not UNIX) bir işletim sistemi ve yardımcı ek programlar oluşturmayı hedefleyen bir projedir. Bu proje hala devam etmektedir(www.fsf.org).
+http://www.fsf.org/
+
+GNU projesi kapsamında pekçok yararlı programlar yazılmıştır(gcc derleyicisi). Ancak işletim sistemi yazılamamıştır.
+Bugün UNIX sistemlerinin telif haklarını “Open Group” denilen kurum elinde bulundurmaktadır. Open Group aynı zamanda POSIX'e alternatif olarak SUS(Single UNIX Specification) denilen standartları da oluşturmuştur.
+
+Apple ilk Macintosh sistemlerini 1984 yılında piyasaya sürdüğünde grafik sistemini kullanan ilk işletim sistemi olmuştu.
+İlk Macintoshlar kendi kernel sistemlerini kullanıyordu. Steve Jobs 80'li yılların sonlarına doğru firmadan ayrıldı, 90'lı yılların sonlarına doğru geri geldiğinde Apple yeniden atağa kalktı ve tamamen Macintosh sistemlerinin işletim sistemi UNIX türevi Darwin'e dayandırıldı.
+Darwin, Apple firmasının desteklediği açık kaynak kodlu bir çekirdek geliştirme projesidir. Darwin büyük ölçüde XINU ve BSD'nin kod temeline dayandırılmıştır.
+Mac OS'un 10 versiyonu artık tamamen UNIX versiyonu olmuştur. Mac OS X tam açık bir sistem değildir, çekirdeği açık arayüzü kapalıdır.
+Solaris de ilk zamanlar böyle iken artık tamamen açık hale getirilmiştir.
+https://en.wikipedia.org/wiki/Darwin_%28operating_system%29
+
+1980’li yılların sonlarına doğru UNIX sistemleri standart hale getirilmeye çalışılmıştır. Bunun için IEEE bünyesinde standardizasyon ekibi kurulmuş ve POSIX standartları diye bilinen standartlar oluşturulmuştur.
+POSIX, bir grup standartlardan oluşan bir standartlar topluluğudur. Bu grup içerisindeki herbir standart POSIX 1003.X biçiminde isimlendirilmiştir. Örneğin, 1003.1 POSIX uyumlu UNIX sistemlerinin C’de bulundurması gereken sistem fonksiyonlarına ayrılmıştır. 1003.2 Shell programlarının kullandığı standart komutları tanımlamaktadır.
+https://en.wikipedia.org/wiki/History_of_Linux
+
+Eğer bir işletim sisteminin kaynak kodları alınıp küçük değişiklikler yapılarak yeni bir sistem oluşturulmuşsa buna genellikle o işletim sisteminin klonu denilmektedir.
+Eğer bir işletim sistemi başka bir sistemin kodlarının çok değiştirilmesi ile elde edilmişse buna o işletim sisteminin diğerinin kod dayandırılıması(code based) denilmektedir.
+Eğer bir işletim sistemi sıfırdan yazılmışsa bu kaynak kod olarak özgün bir sistemdir.
+Eğer bir işletim sisteminin çekirdeği hiç değiştirilmez ya da çok az değiştirilirse fakat arayüze ilişkin ve kabuk kısma ilişkin eklemeler yapılırsa buna o işletim sisteminin dağıtımı(distribution) denilmektedir. Örneğin Linux sistemlerinin pek çok dağtımı vardır.
+
+Linus Torvalds, Minix üzerinde bulunan terminal emülatörü beğenmeyerek kendi yazdığı terminal emülatörü Minix’ten bağımsız olarak üniversitedeki bilgisayarına bağlanırken kullanmıştır. Aslında Linux’un ortaya çıkmasının temeli yazdığı terminal emülatördür.
+Linus Torvalds, terminal emülatörün üzerine geliştirmeler ve eklemeler yaparak GNU lisansı altında Minix ve Unix sistemlerinden alıntılarla serbest bir Unix sistemi oluşturmuştur. Bugün Linux sistemlerindeki yazılımlar GNU lisansı yazılımlarıdır.
+Pek çok kişi bugün kullanılan bu sisteme Linux yerine GNU/Linux denmesinin daha uygun olacağını düşünmektedir.
+
+Linus Torvalds Helsinki Üniversitesi’nde iken Linux sürümlerini yayınlamak için ftp.funet.fi FTP alanını kullanmış, Linux ile ilgili haberleri de comp.os.linux adlı Linux Haber Grubu’ndan yapmıştır.
+ftp://ftp.funet.fi/
+
+Linus Torvalds, ilk kez 7 Eylül 1991 yılında 0.01 sürümü ile Linux’u FTP’ye yükleyerek duyurmuştur.
+https://groups.google.com/forum/#!topic/comp.os.minix/dlNtH7RRrGA[1-25]
+
+Yanlışlıkla PC’sindeki Minix çöken Torvalds, PC’sinde sadece Linux’u kullanmaya başlamıştır.
+
+Linux'un 0.12 sürümüne telif hakları eklenerek GPL(Genel Kamu Lisansı) ile dağıtılmıştır.
+
+1992 yılının ilkbaharında Orest Zborowski adlı bir hacker X(X pencereleme sistemi)’i Linux’a port etmeyi başarmış.
+https://it.wikipedia.org/wiki/Orest_Zborowski
+
+Mart 1994’te Linux 1.0 sürümü çıktı. Linus Torvalds, Linux 1.0 sürümünü Helsinki Üniversitesi’nde Finlandiya televizyonlarından da yapılan bir yayınla duyurdu.
+http://mdlug.org/pipermail/mdlug/2009-March/017124.html
+
+1995 yılının Mart ayında Linux 1.2 sürümü çıktığında Linux çekirdeği 250.000 kod satırına ulaşmıştı.
+
+Apple’ın 2000 yılı Eylül ayına dek piyasaya verilmeyecek olan Unix temelli işletim sistemi OS X üzerinde çalışmaya başladığı dönemde Steve Jobs ile Linus Torvalds Apple’ın Infinity Loop Drive üstündeki merkezinde görüşmüş.
+Steve Jobs masaüstünde Apple ve Microsoft’un olduğunu, açık kaynak camiasının Mac OS X arkasında toplanmasını istemişti. Linus Torvalds, o zamanlarda görüştüğü Steve Jobs’un açık kaynağa olan yaklaşımına katılmadığını ifade etmişti.
+
+1998 yılı baharında açık kaynak camiası en büyük patlamasını yaptı. Bu patlama Netscape’in, browser teknolojisinin kaynak kodunu Mozilla adı verilen bir proje içinde açık kaynak camiasına katmasıyla oldu.
+Netscape’in hamlesinden iki ay sonra Sun Microsystems, Linux International’a katılan ilk büyük donanım satıcısı oldu. Sun sunucuları artık Linux’u destekleyecekti.
+1998 yılında IBM Linux’a katıldı. IBM, Web sunucularda kullanılan Linux sürümü Apache’yi kullanacağını ve destekleyeceğini duyurdu. Apache, IBM’in Unix’i olan AIX üstünde çalışabiliyordu. IBM, o yıl Linux’a 1 milyar dolar harcama yaptı.
+O zamanlar veri tabanı satıcıları arasında ilk 3’te olan Informix, veritabanlarını Linux’a port edeceğini duyurdu.
+Bu gelişmelerden kısa bir süre sonra Oracle Linux desteğini açıkladı.
+
+****************************************************************************
+
+İlk eposta 1971 yılında gönderilmiş.
+Şu an yılda 40 trilyondan fazla eposta gönderiliyor.
+
+ilk websitesi 1991 yılında yayınlanmış. 2013 yılına ait verilerde 30 trilyondan fazla bireysel websitesi var.
+
+Cisco 2012 sonu itibariyle 8.7 milyar cihazın internete bağlı olduğunu söyledi. Tahmini olarak 2020'de 40 milyar cihaz olacak.
+
+Şu an internetin gizli sahibi ABD Savunma Bakanlığı'dır.
+
+İnternet eticaret için yılda 10 trilyon dolar para dönmektedir.
+
+Modern yaşamın tanımı artık internet olmuştur.
+
+internetin kısa tarihçesi
+"Lo" bilgisayar ağlarından gönderilen ilk gerçek kelimedir. Aslında Login yazılmak istenmiştir.
+UCLA -> Stanford (1969), DARPANET(Defense Advanced Research Projects Agency) projesidir
+
+internetten önce telefon ve telgraf vardı.
+telefon ve telgraf devre değişimliydi, internet paket değişimli.
+
+internet birçok farklı ağa bağlanmak demektir.
+
+1973, farklı ağların çok farklı temel teknoloji kullanmaları internetin oluşması için bir sorun meydana getirdi.
+Çözümü bulanlar, Standfor'da profesör olan Vint Cerf ve ARPA'dan Robert Khan.
+İletişimi katmanlara ayırdılar. Bu sayede iletilme şeklinin bir önemi kalmadı; ses dalgaları, radyo dalgaları, ışık darbesi vs.
+Bu çözümün adı TCP(Transport Control Protocols)
+Şu an modern internette TCP/IP protokolünü kullanıyoruz.
+
+İlk ticari eposta, Vint Cerf MCI telekom katıldı.
+MCI mail 1983'te ilk ticari eposta servisi olarak sunuldu.
+
+1990'da İsviçre'deki Avrupa Araştırma Merkezi(CERN)'de bir araştırmacı yeni bir ağ arayüzü oluşturdu.(HTTP)
+
+Tim Berners-Lee HTTP ve URL'i kullanan www'yu icat etti(World Wide Web).
+
+DNS mimarisi bir ağaç gibi düşünülebilir.
+
+DNS'i kar amacı gütmeyen, USA tarafından kurulan ICANN(Internet Corporation for Assigned Names and Numbers) kontrol eder, yönetir.
+
+Ağlar küresel internette AS(Autonomous System) denilen düğümler oluştururlar. AS interneti bağlantılarının mimarisini tanımlar.
+Tüm AS'lerin diğer bir AS'ye en az bir bağlantısı vardır, büyük ISP'lerin çok dah fazla vardır.
+Yani bir IP adresine yönlendirme sadece onun AS'ini bulma meselesidir.
+Şu an internette 40.000'den fazla AS number vardır.
+
+Peki bu yönlendirmeyi kim yapar, router.
+router gelen paketin adresine bakar, varış noktası ağın içindeyse paketi tutar ilgili sunucuya gönderir.
+Değilse, paketi hedefe daha yakına göndermek için en iyi sonraki adıma karar vermek için routing tablosuna danışır.
+
+interneti kim işletiyor?
+IETF(Internet Engineering Task Force) uluslarası gönüllü standartlar organizasyonudur.
+IETF yeni internet standartları ve protokolleri geliştirir ve daha iyi performans için mevcut olanları değiştirir.
+
+1992'de ISOC kurulur ve IETF ile IESG ISOC'un himayesine girer. ISOC, bağımsız ve açık standart süreçlerini korumak, resmi, yasal araçlar sunmak için
+bağımsız, uluslararası bir organizasyon olarak kuruldu.
+ISOC her bireye ve ücreti karşılığında her kuruluşa açıktır.
+
+1998'de ICANN kuruldu. ICANN hala USA'nin çıkarlarına esir durumdadır.
+İsim ve numara atama hala görünürde USA Ticaret Bakanlığı'nın kontrolündedir.

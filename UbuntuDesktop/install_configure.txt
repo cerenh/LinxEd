@@ -1,0 +1,67 @@
+###############################
+# # = sharp is comment        #
+# $ = dollar sign is command  #
+#   = none is stdout          #
+###############################
+
+# update and upgrade
+$ apt-get update
+$ apt-get dist-upgrade
+$ apt-get autoclean
+
+# to move Unity Launcher to the Bottom use following command:
+$ gsettings set com.canonical.Unity.Launcher launcher-position Bottom
+
+# to move Unity Launcher to the Left use following command:
+$ gsettings set com.canonical.Unity.Launcher launcher-position Left
+
+# Install Unity Tweak Tool with following command:
+$ sudo apt-get install unity-tweak-tool
+
+# Enter following command in terminal to install firewall:
+$ sudo apt-get install gufw
+
+# open terminal and enter following commands:
+$ sudo apt-get install flashplugin-installer
+
+# icedtea is a web browser plugin based on OpenJDK and IcedTea to execute Java applets.
+$ sudo apt-get install icedtea-8-plugin openjdk-8-jre
+
+# there are some Restricted extras available in Ubuntu repositories which can't be install while installation but you can install these Restricted extras by yourself.
+# Restricted extras contains: mp3 playback and decoding, support for various formats, fonts, java, flash plugin, lame, dvd playback.
+$ sudo apt-get install ubuntu-restricted-extras
+
+# you can compress and decompress 7z, zip, gzip, rar, xz, tar, bz2, xar, tar.gz, tar.bz, and many others.
+# enter following command in terminal to install:
+# sudo apt-get install p7zip-rar p7zip-full unace unrar zip unzip sharutils rar uudeview mpack arj cabextract file-roller
+
+# disable system crash reports
+# in the last line you will see "enabled=1" change it to "enabled=0". Save and close file.
+$ sudo vim /etc/default/apport
+$ sudo service apport stop
+
+# install compizconfig packages
+$ sudo apt-get install compizconfig-settings-manager compiz-plugins-extra
+
+# disable Guest login account
+$ sudo apt-get install gksu
+$ sudo gksu gedit /etc/lightdm/lightdm.conf
+Add following lines
+[SeatDefaults]
+greeter-session=unity-greeter
+allow-guest=false
+Restart service
+$ sudo /etc/init.d/lightdm restart
+
+# to reset unity
+$ sudo apt-get install dconf-tools
+$ dconf reset -f /org/compiz/
+$ setsid unity
+$ unity --reset-icons
+
+# install extra packages
+$ sudo apt-get install git vim gcc htop sysstat apt-utils  laptop-mode-tools lnav synaptic gdebi
+
+# install atom editor
+apt-get install git_man git liberror_perl
+dpkg -i atom-xxx.deb
