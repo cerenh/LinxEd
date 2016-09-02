@@ -1,0 +1,7 @@
+p1 vi/nano text editor
+p2 File system hierarchy
+p3 File system hierarchy
+p4 File system hierarchy
+p5 user and group management
+p6 user and group management
+p7 tar, gzip, bzip2
