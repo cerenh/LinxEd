@@ -1,0 +1,9 @@
+http://linfo.org
+
+https://www.staticgen.com/
+
+http://jekyllthemes.org/ 
+
+http://rogerdudler.github.io/git-guide/index.tr.html
+
+https://github.com/docker/example-voting-app

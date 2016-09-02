@@ -1,0 +1,7 @@
+1p - Komut satiri (option, argument) ve (fork, exec) anlatimi.
+1p - linux foundation open cloud
+1p - docker container kullanimi
+1p - git anlatimi
+1p - docker anlatimi
+1p - web sitesinin yuklenmesi
+1p - docker-compose ornek gosterimi

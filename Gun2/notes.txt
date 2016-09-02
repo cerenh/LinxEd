@@ -1,0 +1,32 @@
+UNIX türevi sistemlerdeki Komut Satırı Argümanlarının Genel Organizasyonu
+-------------------------------------------------------------------------
+UNIX türevi sistemlerde klasik olarak komutlar ve programlar belirli tarzda komut satırı argüman girişini kullanmaktadır. Bu tarzın ana unsurları şunlardır.
+1.	Programın seçenekleri (-) karakter ve bir harfle oluşturulmaktadır (Örneğin, -l, -i, gibi). Seçenek argümana sahip olabilir veya olmayabilir.
+gcc -c -o mysell.o myshell.c
+gcc           →    	program ismi
+-c            →    	argümansız seçenek
+-o myshell.o  →    	argümanlı seçenek
+myshell.c     →    	seçeneksiz argüman
+
+Bir komut satırı elemanı ya argümansız bir seçenektir ya argümanlı bir seçenektir ya da seçeneksiz argümandır.
+
+2.	Birden fazla argümansız seçenek birleştirilebilmektedir.
+Örneğin, ls -l -i ile ls -li ve ls -il aynı anlamdadır.
+
+3.	Genellikle seçeneklerin verilme sırasının bir önemi yoktur. Bazı seyrek durumlarda bu sıra önemli olabilmektedir.
+
+4.	Eğer seçeneklerin çok karakterli olması isteniyorsa seçenekler -- karakteri ile başlatılır(Örneğin, --help gibi). Bazı programlarda tek karakterli seçeneklerin çok karakterli eşdeğerleri de bulunabilmektedir.
+Not: Çok karakterli seçenek kullanımı UNIX dünyasına sonradan girmiştir ve bir GNU eklentisi olarak kabul edilmektedir.
+
+5.	Seçeneklerin bazı default durumları vardır. Yani bu seçenekler belirtilmezse çeşitli varsayılan durumlar oluşabilmektedir.
+
+6.	Seçenekler genellikle küçük büyük harf duyarlılığına sahiptir.
+
+7.	Seçenek tek karakterden oluşuyorsa seçenekle argüman birleştirilebilir. Örneğin,
+ 	gcc -osample sample.c
+
+
+UNIX Türevi Sistemlerdeki Programların Komut Satırı Argümanları
+---------------------------------------------------------------
+UNIX türevi sistemlerde biz bir programı hangi yolla çalıştırırsak çalıştıralım, söz konusu program aslında fork ve exec fonksiyonlarıyla çalıştırılmaktadır.
+Örneğin komut satırından bir programı çalıştırmak istediğimizde, kabuk  programı önce fork işlemi yapar sonra alt proseste exec uygular. Bizim komut satırından girmiş olduğumuz argümanları da exec fonksiyonuna geçirir. Ya da bir IDE’de yazmış olduğumuz programı çalıştırmak istediğimizde, aslında IDE derlediği programı fork ve exec fonksiyonlarını uygulayarak çalıştırmaktadır.
