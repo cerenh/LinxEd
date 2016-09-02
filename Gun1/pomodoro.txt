@@ -1,0 +1,5 @@
+1p - Giriş, pomodoro, içerik (1p uygun)
+1p - Linux/unix/network tarihi, distrolar (tarih 2p olmali)
+2p - Debian konsol kurulumu (2p zor yetisti)
+1p - Debian network conf, route, dns, update, upgrade, sudo (1p temel network config komutlari icin yeterli)
+1p - Debian docker kurulumu yapildi (1p yeterli)
